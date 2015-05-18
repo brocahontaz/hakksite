@@ -85,7 +85,7 @@
 			</div>
 		</div>
 		<div id="footer_container">
-			<div id="footer_content">
+			<div class="footer_content">
 				<div class="footer_content_element">
 					<h3>HAKK</h3>
 					<p class="footer_text">
@@ -113,7 +113,16 @@
 				<div class="footer_content_element">
 					<h3>CONTACT</h3>
 					<p class="footer_text">
-						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
+						Phone: 070 211 68 28 <br/><br/>
+						Mail: hakk@rooter.se <br/><br/>
+						Website: www.rooter.se
+					</p>
+				</div>
+			</div>
+			<div id="footer_container_bottom">
+				<div class="footer_content">
+					<p class="footer_text">
+						Copyright © 2015 HAKK | All rights reserved
 					</p>
 				</div>
 			</div>
