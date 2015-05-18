@@ -16,12 +16,14 @@
 				<div id="logo_box">
 				</div>
 				<a href="#home" class="menuobject">HOME</a>
-				<a href="#home" class="menuobject">ABOUT</a>
+				<a href="#about" class="menuobject">ABOUT</a>
+				<a href="#home" class="menuobject">TEAM</a>
 				<a href="#home" class="menuobject">DOWNLOADS</a>
 				<a href="#home" class="menuobject">GALLERY</a>
 				<a href="#home" class="menuobject">CONTACT</a>
 			</div>
 		</div>
+		<a name="home" class="top"></a>
 		<div id="main_wrapper">
 			<div id="main_container">
 				<div id="main_image">
@@ -32,10 +34,25 @@
 						</p>
 					</div>
 					<div id="image_overlay_two">
-						<h2 white>DOWNLOAD NOW</h2>
+						<h2>DOWNLOAD NOW</h2>
 					</div>
 				</div>
-			</div>	
+				
+			</div>
+				<a name="about" class="top"></a>
+				<div class="content_element">
+					<div class="content_container">
+						<div class="content_header">
+							ABOUT
+						</div>
+					</div>
+				</div>
+				<div class="content_element">
+				</div>
+				<div class="content_element">
+				</div>
+				<div class="content_element">
+				</div>			
 		</div>
 		<div id="footer_container">
 		</div>
