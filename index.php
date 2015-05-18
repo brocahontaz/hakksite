@@ -75,7 +75,7 @@
 				</div>
 			</div>
 			
-			<div class="content_element">
+			<div class="content_element" style="margin-bottom: 25px">
 				<a name="contact" class="top"></a>
 				<div class="content_container">
 					<div class="content_header" style="background-color: #106684">
@@ -83,9 +83,40 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		<div id="footer_container">
+			<div id="footer_content">
+				<div class="footer_content_element">
+					<h3>HAKK</h3>
+					<p class="footer_text">
+						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
+					</p>
+				</div>
+				
+				<div class="footer_content_element">
+					<h3>NEWS</h3>
+					<p class="footer_text">
+						
+					</p>
+				</div>
+				
+				<div class="footer_content_element">
+					<h3>TEAM</h3>
+					<p class="footer_text">
+						Ragnar Mellbin <br/>
+						Felix Åkerlund <br/>
+						Johan Andersson <br/>
+						Michael Jivung
+					</p>
+				</div>
+				
+				<div class="footer_content_element">
+					<h3>CONTACT</h3>
+					<p class="footer_text">
+						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
+					</p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
