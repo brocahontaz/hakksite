@@ -17,10 +17,10 @@
 				</div>
 				<a href="#home" class="menuobject">HOME</a>
 				<a href="#about" class="menuobject">ABOUT</a>
-				<a href="#home" class="menuobject">TEAM</a>
-				<a href="#home" class="menuobject">DOWNLOADS</a>
-				<a href="#home" class="menuobject">GALLERY</a>
-				<a href="#home" class="menuobject">CONTACT</a>
+				<a href="#team" class="menuobject">TEAM</a>
+				<a href="#downloads" class="menuobject">DOWNLOADS</a>
+				<a href="#gallery" class="menuobject">GALLERY</a>
+				<a href="#contact" class="menuobject">CONTACT</a>
 			</div>
 		</div>
 		<a name="home" class="top"></a>
@@ -37,22 +37,53 @@
 						<h2>DOWNLOAD NOW</h2>
 					</div>
 				</div>
-				
 			</div>
+			
+			<div class="content_element">
 				<a name="about" class="top"></a>
-				<div class="content_element">
-					<div class="content_container">
-						<div class="content_header">
-							ABOUT
-						</div>
+				<div class="content_container">
+					<div class="content_header">
+						ABOUT
 					</div>
 				</div>
-				<div class="content_element">
+			</div>
+			
+			<div class="content_element">
+				<a name="team" class="top"></a>
+				<div class="content_container">
+					<div class="content_header" style="float:right; background-color: green">
+						TEAM
+					</div>
 				</div>
-				<div class="content_element">
+			</div>
+			
+			<div class="content_element">
+				<a name="downloads" class="top"></a>
+				<div class="content_container">
+					<div class="content_header" style="background-color: red">
+						DOWNLOADS
+					</div>
 				</div>
-				<div class="content_element">
-				</div>			
+			</div>
+			
+			<div class="content_element">
+				<a name="gallery" class="top"></a>
+				<div class="content_container">
+					<div class="content_header" style="float: right; background-color: purple">
+						GALLERY
+					</div>
+				</div>
+			</div>
+			
+			<div class="content_element">
+				<a name="contact" class="top"></a>
+				<div class="content_container">
+					<div class="content_header" style="background-color: #106684">
+						CONTACT
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		<div id="footer_container">
 		</div>
