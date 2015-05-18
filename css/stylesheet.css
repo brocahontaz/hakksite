@@ -1,0 +1,299 @@
+/*
+
+		MAIN BODY PROPERTIES
+
+*/
+body {
+min-width: 100%;
+min-height: 100%;
+background-color: #FFFFFF;
+padding: 0;
+margin: 0;
+}
+
+/* HEADERS */
+h1{
+font-size: 20px;
+font-family: Corbel Arial;
+font-weight: bold;
+line-height: 22px;
+color: #000;
+}
+h2{
+font-size: 22px;
+font-family: Corbel, Arial;
+font-weight: normal;
+font-style: none;
+line-height: 24px;
+color: #000;
+margin: 20px 0 20px 0;
+}
+h2.white {
+color: #fff;
+}
+/* TEXT */
+.breadtext {
+font-size: 18px;
+font-family: Corbel, Arial;
+font-weight: normal;
+line-height: 22px;
+color: #000;
+}
+.normaltext {
+font-size: 14px;
+font-family: Corbel, Arial;
+font-weight: normal;
+line-height: 14px;
+color: #000;
+}
+.footnote {
+font-size: 11px;
+font-family: Corbel, Arial;
+font-weight: normal;
+line-height: 11px;
+color: #000;
+}
+
+/*
+
+		TOP BORDER
+
+*/
+
+#top_border_container {
+min-width: 100%;
+height: 10px;
+background-color: #106684;
+padding: 0;
+margin: 0;
+position: fixed;
+top: 0;
+box-shadow: 3px 3px 3px #bdbdbd;
+z-index: 4;
+}
+
+/*
+
+		MENU CONTAINER
+
+
+*/
+#menu_container {
+background-color: #FFFFFF;
+position: fixed;
+width: 100%;
+height: 120px;
+top: 0;
+margin: 0;
+padding: 0;
+z-index: 3;
+}
+
+
+/*
+
+		MENU CONTENT
+
+*/
+#menu_content {
+width: 1200px;
+height: 120px;
+padding: 0;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*
+
+		LOGO BOX
+
+*/
+#logo_box {
+background-image: url("../images/logotest2.png");
+width: 300px;
+height: 120px;
+padding: 0;
+float: left;
+}
+
+/*
+
+		MAIN WRAPPER
+
+*/
+#main_wrapper {
+position: relative;
+width: 100%;
+min-height: 100%;
+padding-bottom: 200px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+}
+
+/* Clear floats to allow auto height on parent */
+.main_wrapper:after {
+clear: both;
+content: "";
+display: block;
+}
+
+
+/*
+
+		MAIN CONTAINER
+
+*/
+
+#main_container {
+position: relative;
+width: 1200px;
+height: 1000px;
+background-color: #FFFFFF;
+padding: 0;
+margin-top: 120px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 0;
+left: 0;
+right: 0;
+z-index: 2;
+}
+
+/* Clear floats to allow auto height on parent */
+.main_container:after {
+clear: both;
+content: "";
+display: block;
+}
+
+/*
+
+		MAIN IMAGE
+
+*/
+#main_image {
+position: relative;
+width: 1200px;
+height: 400px;
+background-image: url("../images/background.png");
+background-size: 100%;
+background-position: left top;
+background-color: red;
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+}
+
+#image_overlay_one {
+position: absolute;
+max-width: 500px;
+top: 50px;
+left: 50px;
+background-color: white;
+opacity: 0.8;
+border-radius: 5px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 18px;
+line-height: 30px;
+font-family: Corbel;
+font-weight: normal;
+color: black;
+text-decoration: none;
+}
+
+#image_overlay_two {
+position: absolute;
+bottom: 50px;
+right: 50px;
+background-color: #fff;
+opacity: 0.9;
+border-radius: 5px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 0px;
+padding-bottom: 0px;
+font-size: 18px;
+line-height: 30px;
+font-family: Corbel;
+font-weight: normal;
+color: white;
+text-decoration: none;
+}
+
+
+/*
+
+		MENU OBJECT
+
+*/
+a.menuobject {
+float: left;
+background-color: #FFFFFF;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 60px;
+padding-bottom: 10px;
+margin: 0;
+font-size: 20px;
+font-family: Corbel;
+font-weight: normal;
+color: BLACK;
+text-decoration: none;
+}
+
+a.menuobject:hover {
+background-color: #f2f2f2;
+border-bottom: 4px solid #106684;
+}
+
+a.menuobject:visited {
+
+}
+
+a.menuobject:active {
+
+}
+
+/*
+
+		ACTIVE MENU OBJECT
+
+*/
+a.menuobject.active {
+background-color: ORANGE;
+color: #FFFFFF;
+}
+
+a.menuobject.active:hover {
+
+}
+
+a.menuobject.active:visited {
+
+}
+
+a.menuobject.active:active {
+
+}
+
+/*
+
+
+		FOOTER CONTAINER
+  
+*/
+#footer_container {
+border-top: 2px solid #cecece;
+background-color: #343434;
+width: 100%;
+height: 200px;
+padding: 0;
+position: relative;
+margin-top: -200px;
+clear:both;
+}
