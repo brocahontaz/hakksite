@@ -37,6 +37,15 @@ line-height: 24px;
 color: #fff;
 margin: 40px 0 40px 0;
 }
+h4{
+font-size: 20px;
+font-family: Corbel, Arial;
+font-weight: bold;
+font-style: none;
+line-height: 24px;
+color: #000;
+margin: 20px 0 10px 0;
+}
 /* TEXT */
 .breadtext {
 font-size: 18px;
@@ -66,6 +75,14 @@ font-family: Corbel, Arial;
 font-weight: normal;
 line-height: 17px;
 color: #FFF;
+}
+
+.member {
+font-size: 14px;
+font-family: Corbel, Arial;
+font-weight: normal;
+line-height: 14px;
+color: #000;
 }
 
 a.top {
@@ -276,12 +293,80 @@ color: white;
 text-decoration: none;
 }
 
+.content_text {
+float: left;
+margin: 0;
+width: 700px;
+height: ;
+padding-top: 15px;
+padding-left: 30px;
+padding-right: 30px;
+vertical-align: middle;
+font-size: 18px;
+line-height: 22px;
+font-family: Corbel;
+font-weight: normal;
+color: #000;
+text-decoration: none;
+}
+
 .content_container {
 position: relative;
 width: 1200px;
 height: auto;
 margin-left: auto;
 margin-right: auto;
+}
+
+#team_container {
+float: right;
+margin: 0;
+width: 850px;
+height: 300px;
+padding: 0;
+}
+
+.team_member {
+float: left;
+width: 200px;
+height: 300px;
+padding: 0;
+margin: 0;
+}
+
+.team_member_pic{
+float: left;
+margin-top: 30px;
+margin-left: 25px;
+width: 150px;
+height: 150px;
+border-radius: 75px;
+
+background-size: 100%;
+}
+
+.team_member_pic.johan {
+background-image:url("../images/johan.jpg");
+}
+
+.team_member_pic.micke {
+background-image:url("../images/micke.jpg");
+}
+
+.team_member_pic.ragnar {
+background-image:url("../images/ragnar.jpg");
+}
+
+.team_member_pic.felix {
+background-image:url("../images/felix.jpg");
+}
+
+.team_member_text {
+float: left;
+width: 200px;
+height: 150px;
+text-align: center;
+vertical-align: middle;
 }
 
 /*
