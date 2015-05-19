@@ -11,6 +11,18 @@ padding: 0;
 margin: 0;
 }
 
+/* LINKS */
+a{
+text-decoration: none;
+color: #000;
+}
+a:hover{
+text-decoration: underline;
+}
+a.plain_white {
+color: #fff;
+}
+
 /* HEADERS */
 h1{
 font-size: 20px;
@@ -214,8 +226,8 @@ display: block;
 #main_image {
 position: relative;
 width: 1200px;
-height: 400px;
-background-image: url("../images/background.png");
+height: 560px;
+/*background-image: url("../images/background.png");*/
 background-size: 100%;
 background-position: left top;
 background-color: #106684;
@@ -341,7 +353,6 @@ margin-left: 25px;
 width: 150px;
 height: 150px;
 border-radius: 75px;
-
 background-size: 100%;
 }
 
@@ -358,7 +369,7 @@ background-image:url("../images/ragnar.jpg");
 }
 
 .team_member_pic.felix {
-background-image:url("../images/felix.jpg");
+background-image:url("../images/felix.png");
 }
 
 .team_member_text {

@@ -7,6 +7,26 @@
 		</title>
 		<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {           
+			var i =0; 
+			var images = ['images/background2.png','images/background3.png','images/background4.png'];
+			var image = $('#main_image');
+                //Initial Background image setup
+			image.css('background-image', 'url(images/background4.png)');
+                //Change image at regular intervals
+			setInterval(function(){   
+				image.fadeOut(1000, function () {
+					image.css('background-image', 'url(' + images [i++] +')');
+					image.fadeIn(1000);
+				});
+			if(i == images.length)
+			i = 0;
+			}, 3500);            
+		});
+
+		</script>
 	</head>
 	<body>
 		<div id="top_border_container">
@@ -33,9 +53,11 @@
 							Set up your own server, or join others in a ferocious game of sword fighting mixed with platformer action, in this muliplayer game for up to 4 individual players simultaniously.
 						</p>
 					</div>
+					<a href="#downloads">
 					<div id="image_overlay_two">
 						<h2>DOWNLOAD NOW</h2>
 					</div>
+					</a>
 				</div>
 			</div>
 			
@@ -160,10 +182,10 @@
 				<div class="footer_content_element">
 					<h3>TEAM</h3>
 					<p class="footer_text">
-						Ragnar Mellbin <br/>
-						Felix Åkerlund <br/>
-						Johan Andersson <br/>
-						Michael Jivung
+						<a href="" class="plain_white">Ragnar Mellbin</a> <br/>
+						<a href="" class="plain_white">Felix Åkerlund</a> <br/>
+						<a href="http://www.rooter.se" class="plain_white">Johan Andersson</a> <br/>
+						<a href="" class="plain_white">Michael Jivung</a>
 					</p>
 				</div>
 				
@@ -171,15 +193,15 @@
 					<h3>CONTACT</h3>
 					<p class="footer_text">
 						Phone: 070 211 68 28 <br/><br/>
-						Mail: hakk@rooter.se <br/><br/>
-						Website: www.rooter.se
+						Mail: <a href="mailto:hakk@rooter.se" class="plain_white">hakk@rooter.se</a> <br/><br/>
+						Website: <a href="http://www.rooter.se" class="plain_white">www.rooter.se</a>
 					</p>
 				</div>
 			</div>
 			<div id="footer_container_bottom">
 				<div class="footer_content">
-					<p class="footer_text">
-						Copyright © 2015 HAKK | All rights reserved | Website produced by rooter.se (Johan Andersson)
+					<p class="footer_text" style="color: #aaaaaa">
+						Copyright © 2015 HAKK | All rights reserved | Website produced by <a href="http://www.rooter.se" style="color: #aaaaaa">rooter.se (Johan Andersson)</a>
 					</p>
 				</div>
 			</div>
