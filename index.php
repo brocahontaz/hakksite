@@ -5,10 +5,12 @@
 		<title>
 			hakk
 		</title>
+		<link rel="icon" type="image/png" href="images/felix.png">
 		<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script type="text/javascript">
+		//Cycling images script
 		$(window).load(function() {           
 			var i =0; 
 			var images = ['images/background2.png','images/background3.png','images/background4.png'];
@@ -25,7 +27,18 @@
 			i = 0;
 			}, 3500);            
 		});
-
+		</script>
+		<script type="text/javascript">
+		//Smooth scrolling script
+		$(document).ready(function (){
+            $('a[href^="#"]').click(function (){
+				var target = $( $(this).attr('href') );
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+            });
+        });
+		
 		</script>
 	</head>
 	<body>
@@ -44,7 +57,7 @@
 				<a href="#contact" class="menuobject">CONTACT</a>
 			</div>
 		</div>
-		<a name="home" class="top"></a>
+		<a id="home" class="top"></a>
 		<div id="main_wrapper">
 			<div id="main_container">
 				<div id="main_image">
@@ -63,7 +76,7 @@
 			</div>
 			
 			<div class="content_element">
-				<a name="about" class="top"></a>
+				<a id="about" class="top"></a>
 				<div class="content_container">
 					<div class="content_header">
 						ABOUT
@@ -87,7 +100,7 @@
 			</div>
 			
 			<div class="content_element">
-				<a name="team" class="top"></a>
+				<a id="team" class="top"></a>
 				<div class="content_container">
 					<div class="content_header" style="float:right; background-color: green">
 						TEAM
@@ -138,9 +151,9 @@
 			</div>
 			
 			<div class="content_element">
-				<a name="downloads" class="top"></a>
+				<a id="downloads" class="top"></a>
 				<div class="content_container">
-					<div class="content_header" style="background-color: red">
+					<div class="content_header" style="background-color: darkred">
 						DOWNLOADS
 					</div>
 					<div class="content_text">
@@ -163,7 +176,7 @@
 			</div>
 			
 			<div class="content_element">
-				<a name="manual" class="top"></a>
+				<a id="manual" class="top"></a>
 				<div class="content_container">
 					<div class="content_header" style="float: right; background-color: purple">
 						MANUAL
@@ -188,7 +201,7 @@
 			</div>
 			
 			<div class="content_element">
-				<a name="gallery" class="top"></a>
+				<a id="gallery" class="top"></a>
 				<div class="content_container">
 					<div class="content_header" style="background-color: black">
 						GALLERY
@@ -197,7 +210,7 @@
 			</div>
 			
 			<div class="content_element" style="margin-bottom: 25px">
-				<a name="contact" class="top"></a>
+				<a id="contact" class="top"></a>
 				<div class="content_container">
 					<div class="content_header" style="float: right; background-color: #106684">
 						CONTACT
