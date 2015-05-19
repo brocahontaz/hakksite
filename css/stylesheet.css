@@ -333,11 +333,11 @@ text-decoration: none;
 #expanderContent {
 float: left;
 margin: 0;
-width: 1200px;
-height: 200px;
-padding-top: 15px;
+width: 1170px;
+height: ;
+padding-top: 0;
 padding-left: 30px;
-padding-right: 30px;
+padding-right: 0;
 vertical-align: middle;
 font-size: 18px;
 line-height: 22px;

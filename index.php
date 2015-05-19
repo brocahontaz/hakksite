@@ -115,7 +115,22 @@
 						<h4>Server</h4>
 						<h4>Client</h4>
 						<h4>Networking</h4>
-						
+						<h4>Design & Technology</h4>
+						<h4>Evaluation</h4>
+						<h4>Source Code</h4>
+						<p class="breadtext">
+						The source code is available at the project git @ <b><a href="https://github.com/ragadeeshu/hakk" target="_blank">Github</a></b>.
+						</p>
+						<h4>Website</h4>
+						<p>
+						The website is created in HTML5-standard, designed and formatted with CSS3 and additional scripts have been created with jQuery, to allow a more smooth operation.
+						</p>
+						<p>
+						Tested in all major browsers, to ensure cross-browser stability.
+						</p>
+						<p>
+						Validated by <a href="https://validator.w3.org/check?uri=http%3A%2F%2Fwww.rooter.se%2Fc%2Fhakk%2F" target="_blank">W3C Markup Validation Service.</a>
+						</p>
 					</div>
 				</div>
 			</div>
