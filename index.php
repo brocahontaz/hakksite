@@ -39,6 +39,7 @@
 				<a href="#about" class="menuobject">ABOUT</a>
 				<a href="#team" class="menuobject">TEAM</a>
 				<a href="#downloads" class="menuobject">DOWNLOADS</a>
+				<a href="#manual" class="menuobject">MANUAL</a>
 				<a href="#gallery" class="menuobject">GALLERY</a>
 				<a href="#contact" class="menuobject">CONTACT</a>
 			</div>
@@ -79,7 +80,7 @@
 							The application to be developed is produced from scratch, and topic as well as platform is free of choice.
 						</p>
 						<p>
-						We set out with the goal to develop a multiplayer game in Java, processed in realtime. <br/><span style="float: right">READ MORE-></span>
+						We set out with the goal to develop a multiplayer game in Java, processed in realtime. <br/><span style="float: right"><a href="about.php">READ MORE-></a></span>
 						</p>
 					</div>
 				</div>
@@ -142,13 +143,54 @@
 					<div class="content_header" style="background-color: red">
 						DOWNLOADS
 					</div>
+					<div class="content_text">
+						<p>
+						To play HAKK, you first and foremost need to download the <b>Client</b>. Through the client, you can easily connect to a running server by entering the IP of chosen server.
+						</p>
+						<p>
+						If you wish to host your own session, to which three of your best friends can connect, you also need the <b>Server</b>.
+						</p>
+						<p>
+						No installations are required! We implement the neat concept of "plug and play" - just download, and execute! Runnable on all OS's.
+						</p>
+						<h1>Available files</h1>
+						<p>
+						<b><a href="hakkserver.jar">Server v. 1.0</a></b> -||- <b><a href="hakkclient.jar">Client v. 1.0</a></b>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="content_element">
+				<a name="manual" class="top"></a>
+				<div class="content_container">
+					<div class="content_header" style="float: right; background-color: purple">
+						MANUAL
+					</div>
+					<div class="content_text">
+					<p>
+					So, you have followed the steps described above (under "Downloads"). You have your client ready to fire up, and maybe even the server, if you are feeling especially awesome. Ok? Good.
+					<br/>
+					Now, you wonder, how do I kick some friggin' HAKK ass and show my friends who's the real HAKK'er in town?
+					</p>
+					<p>
+					Well, my dear, it's simple! Just use the <b>arrow keys</b> on your keyboard for movement. You discover that <b>left</b> is for moving left, <b>right</b> for right - but hey! <b>Up</b> makes you.. <i>jump</i>?! Awesome!
+					</p>
+					<p>
+					Then, you accidently hit the <b>z</b> or <b>x</b> key, and amusingly discover this makes you <i>swing your sword</i>!
+					</p>
+					<p>
+					You are now a badass.
+					</p>
+					</div>
 				</div>
 			</div>
 			
 			<div class="content_element">
 				<a name="gallery" class="top"></a>
 				<div class="content_container">
-					<div class="content_header" style="float: right; background-color: purple">
+					<div class="content_header" style="background-color: black">
 						GALLERY
 					</div>
 				</div>
@@ -157,7 +199,7 @@
 			<div class="content_element" style="margin-bottom: 25px">
 				<a name="contact" class="top"></a>
 				<div class="content_container">
-					<div class="content_header" style="background-color: #106684">
+					<div class="content_header" style="float: right; background-color: #106684">
 						CONTACT
 					</div>
 				</div>
@@ -167,6 +209,9 @@
 			<div class="footer_content">
 				<div class="footer_content_element">
 					<h3>HAKK</h3>
+					<p class="footer_text">
+					Hack n' slash platformer for up to 4 players.
+					</p>
 					<p class="footer_text">
 						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
 					</p>

@@ -26,9 +26,9 @@ color: #fff;
 /* HEADERS */
 h1{
 font-size: 20px;
-font-family: Corbel Arial;
+font-family: Corbel, Arial;
 font-weight: bold;
-line-height: 22px;
+line-height: 20px;
 color: #000;
 }
 h2{
