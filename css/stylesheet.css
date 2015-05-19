@@ -285,8 +285,16 @@ text-decoration: none;
 float: left;
 margin-top: 25px;
 width: 100%;
-height: 300px;
+height: ;
 background-color: #e5e5e5;
+display: inline-block;
+}
+
+/* Clear floats to allow auto height on parent */
+.content_element:after {
+clear: both;
+content: "";
+display: block;
 }
 
 .content_header {
@@ -310,6 +318,23 @@ float: left;
 margin: 0;
 width: 700px;
 height: ;
+padding-top: 15px;
+padding-left: 30px;
+padding-right: 30px;
+vertical-align: middle;
+font-size: 18px;
+line-height: 22px;
+font-family: Corbel;
+font-weight: normal;
+color: #000;
+text-decoration: none;
+}
+
+#expanderContent {
+float: left;
+margin: 0;
+width: 1200px;
+height: 200px;
 padding-top: 15px;
 padding-left: 30px;
 padding-right: 30px;

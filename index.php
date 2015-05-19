@@ -40,6 +40,19 @@
         });
 		
 		</script>
+		<script type="text/javascript">
+		//Expander
+			$(document).ready(function(){
+				$("#expanderHead").click(function(){
+					$("#expanderContent").slideToggle();
+					if ($("#expanderSign").text() == "+"){
+						$("#expanderSign").html("−")
+					} else {
+						$("#expanderSign").text("+")
+					}
+				});
+			});
+</script>
 	</head>
 	<body>
 		<div id="top_border_container">
@@ -93,8 +106,16 @@
 							The application to be developed is produced from scratch, and topic as well as platform is free of choice.
 						</p>
 						<p>
-						We set out with the goal to develop a multiplayer game in Java, processed in realtime. <br/><span style="float: right"><a href="about.php">READ MORE-></a></span>
+						We set out with the goal to develop a multiplayer game in Java, processed in realtime. <br/>
+						<b><span id="expanderHead" style="float: right; cursor:pointer">READ MORE <span id="expanderSign">+</span></span></b>
 						</p>
+					</div>
+					<div id="expanderContent" style="display:none">
+						<h4>Project</h4>
+						<h4>Server</h4>
+						<h4>Client</h4>
+						<h4>Networking</h4>
+						
 					</div>
 				</div>
 			</div>
