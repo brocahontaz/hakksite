@@ -106,6 +106,7 @@
 						TEAM
 					</div>
 					<div id="team_container">
+						<a href="https://github.com/ragadeeshu" target="_blank">
 						<div class="team_member">
 							<div class="team_member_pic ragnar">
 							</div>
@@ -116,6 +117,8 @@
 								</p>
 							</div>
 						</div>
+						</a>
+						<a href="https://github.com/Fishmoose" target="_blank">
 						<div class="team_member">
 							<div class="team_member_pic felix">
 							</div>
@@ -126,6 +129,8 @@
 								</p>
 							</div>
 						</div>
+						</a>
+						<a href="https://github.com/jivung" target="_blank">
 						<div class="team_member">
 							<div class="team_member_pic micke">
 							</div>
@@ -136,6 +141,8 @@
 								</p>
 							</div>
 						</div>
+						</a>
+						<a href="http://www.rooter.se" target="_blank">
 						<div class="team_member">
 							<div class="team_member_pic johan">
 							</div>
@@ -146,6 +153,7 @@
 								</p>
 							</div>
 						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -240,10 +248,10 @@
 				<div class="footer_content_element">
 					<h3>TEAM</h3>
 					<p class="footer_text">
-						<a href="" class="plain_white">Ragnar Mellbin</a> <br/>
-						<a href="" class="plain_white">Felix Åkerlund</a> <br/>
-						<a href="http://www.rooter.se" class="plain_white">Johan Andersson</a> <br/>
-						<a href="" class="plain_white">Michael Jivung</a>
+						<a href="https://github.com/ragadeeshu" class="plain_white" target="_blank">Ragnar Mellbin</a> <br/>
+						<a href="https://github.com/Fishmoose" class="plain_white" target="_blank">Felix Åkerlund</a> <br/>
+						<a href="http://www.rooter.se" class="plain_white" target="_blank">Johan Andersson</a> <br/>
+						<a href="https://github.com/jivung" class="plain_white" target="_blank">Michael Jivung</a>
 					</p>
 				</div>
 				
@@ -259,7 +267,7 @@
 			<div id="footer_container_bottom">
 				<div class="footer_content">
 					<p class="footer_text" style="color: #aaaaaa">
-						Copyright © 2015 HAKK | All rights reserved | Website produced by <a href="http://www.rooter.se" style="color: #aaaaaa">rooter.se (Johan Andersson)</a>
+						Copyright © 2015 HAKK | All rights reserved | Website produced by <a href="http://www.rooter.se" style="color: #aaaaaa" target="_blank">rooter.se (Johan Andersson)</a>
 					</p>
 				</div>
 			</div>
