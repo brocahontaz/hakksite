@@ -9,6 +9,9 @@
 		<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/lightbox.min.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<script type="text/javascript">
 		//Cycling images script
 //		$(window).load(function() {           
@@ -38,7 +41,6 @@
                     }, 1000);
             });
         });
-		
 		</script>
 		<script type="text/javascript">
 		//Expander
@@ -54,40 +56,21 @@
 			});
 		</script>
 		<script type="text/javascript">
-			var observe;
-if (window.attachEvent) {
-    observe = function (element, event, handler) {
-        element.attachEvent('on'+event, handler);
-    };
-}
-else {
-    observe = function (element, event, handler) {
-        element.addEventListener(event, handler, false);
-    };
-}
-function init () {
-    var text = document.getElementById('msg');
-    function resize () {
-        text.style.height = 'auto';
-        text.style.height = text.scrollHeight+'px';
-    }
-    /* 0-timeout to get the already changed text */
-    function delayedResize () {
-        window.setTimeout(resize, 0);
-    }
-    observe(text, 'change',  resize);
-    observe(text, 'cut',     delayedResize);
-    observe(text, 'paste',   delayedResize);
-    observe(text, 'drop',    delayedResize);
-    observe(text, 'keydown', delayedResize);
+		//Autoresizing textarea
+		$(document).ready(function() {
+			jQuery.each(jQuery('textarea[data-autoresize]'), function() {
+				var offset = this.offsetHeight - this.clientHeight;
+				var resizeTextarea = function(el) {
+					jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+				};
+				jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
+				});
 
-    text.focus();
-    text.select();
-    resize();
-}
-		</script>
+		});
+	</script>
 	</head>
-	<body onload="init();">
+	<body>
+	
 		<div id="top_border_container">
 		</div>
 		<div id="menu_container">
@@ -110,9 +93,9 @@ function init () {
 			<div id="main_container">
 				<div id="main_image">
 					<div id="image_overlay_one">
-						<h2>Hakk n' slash wonder for up to 4 players</h2>
+						<h2>Hakk n' slash wonder for up to 10 players</h2>
 						<p class="breadtext">
-							Set up your own server, or join others in a ferocious game of sword fighting mixed with platformer action, in this muliplayer game for up to 4 individual players simultaniously.
+							Set up your own server, or join others in a ferocious game of sword fighting mixed with platformer action, in this muliplayer game for up to 10 individual players simultaniously.
 						</p>
 					</div>
 					<a href="#downloads">
@@ -146,13 +129,58 @@ function init () {
 						</p>
 					</div>
 					<div id="expanderContent" style="display:none">
-						<h4>Project</h4>
+						<h4>Design Requirements</h4>
+						<p class="breadtext">
+						When we first set out, our goal was to create a multiplayer platformer game. We wanted each player to control a character in real time and fight against other players. 
+						The game would run on a dedicated server which each client connects to. The server should always be running, allowing each client to join or leave as they please. 
+						We wanted to have as much of the game logic as possible on the client side and let the server control only the critical information.
+						</p>
+						<p class="breadtext">
+						Each player controls their own character. You can run, jump and swing a sword. The goal is to hit the opponents with the sword in order to kill them. Once a player dies he will immediately respawn.
+						</p>
 						<h4>Server</h4>
+						<p class="breadtext">
+						The server keeps a master copy of the game state. It receives updates from each client about their respective player state, and in turn replies with the current state of <i>all</i> 
+						connected players. The server alone is responsible for making critical decisions such as whether a kill occurs or not.
+						</p>
 						<h4>Client</h4>
+						<p class="breadtext">
+						The client constantly feeds the server with the player's current state and reads updates on opponents.
+						</p>
+						<p class="breadtext">
+						The user interface is made up of a standard JFrame window with 2D graphics. Input is handled by an event handler which listens for keyboard events.
+						</p>
 						<h4>Networking</h4>
-						<h4>Design & Technology</h4>
+						<p class="breadtext">
+						All data sent over the network consists of Strings in byte form. These data Strings are made up of things such as each player's current state and sword positioning, etc. 
+						Different data categories are separated with separator characters defined in <b>Networking.java</b>. Upon receipt, the data is converted back into Strings and split into 
+						categories and used to update the local game state. In addition to the always present game states, we sometimes append a "message" to the data string. These messages are used 
+						to signal special events to clients, such as deaths or new players joining the game.
+						</p>
 						<h4>Evaluation</h4>
+						<p class="breadtext">
+						In our opinion, we have met all the requirements that we set at the beginning of the project. We ended up spending a lot of time on the project, 
+						adding some additional features such as a moving background, platforms and the particle based blood and rain effects. 
+						</p>
+						<p class="breadtext">
+						In conclusion, we are very pleased with the result. Our general feeling is that we would not have done anything significantly different if we were 
+						to rebuild the game. However, if we would have had more time we could have added a couple of more features, such as a text chat.
+						</p>
+						<p class="breadtext">
+						All in all, we consider the project a great assignment for applying the contents of the course. The fact that we were free to choose a topic of 
+						our choosing was great.
+						</p>
+						<p class="breadtext">
+						Some possible improvements could be a better jump animation, and making the sword follow the hands of the characters.
+						</p>
+						</p>
+						We could also have added some extra features, such as text and/or voice chat. To improve the localization of enemies, arrows pointing in their direction 
+						when out of sight could also have been added.
+						</p>
 						<h4>Source Code</h4>
+						<p class="breadtext">
+						Through the span of the project, we have utilized git in order to work more effectively on multiple computers simultaniously.
+						</p>
 						<p class="breadtext">
 						The source code is available at the project git @ <b><a href="https://github.com/ragadeeshu/hakk" target="_blank">Github</a></b>.
 						</p>
@@ -240,14 +268,14 @@ function init () {
 						To play HAKK, you first and foremost need to download the <b>Client</b>. Through the client, you can easily connect to a running server by entering the IP of chosen server.
 						</p>
 						<p>
-						If you wish to host your own session, to which three of your best friends can connect, you also need the <b>Server</b>.
+						If you wish to host your own session, to which up to nine of your best friends can connect, you also need the <b>Server</b>.
 						</p>
 						<p>
 						No installations are required! We implement the neat concept of "plug and play" - just download, and execute! Runnable on all OS's.
 						</p>
 						<h1>Available files</h1>
 						<p>
-						<b><a href="hakkserver.jar">Server v. 1.0</a></b> -||- <b><a href="hakkclient.jar">Client v. 1.0</a></b>
+						<b><a href="downloads/hakkserver.jar" download>Server v. 1.0</a></b> -||- <b><a href="downloads/hakkclient.jar" download>Client v. 1.0</a></b>
 						</p>
 					</div>
 					
@@ -270,7 +298,7 @@ function init () {
 					Well, my dear, it's simple! Just use the <b>arrow keys</b> on your keyboard for movement. You discover that <b>left</b> is for moving left, <b>right</b> for right - but hey! <b>Up</b> makes you.. <i>jump</i>?! Awesome!
 					</p>
 					<p>
-					Then, you accidently hit the <b>z</b> or <b>x</b> key, and amusingly discover this makes you <i>swing your sword</i>!
+					Then, you accidently hit the <b>Z</b>, <b>X</b>, <b>C</b> or <b>Space Bar</b> key, and amusingly discover this makes you <i>swing your sword</i>! And, as a bonus you can also rotate your sword with <b>A</b> and <b>D</b>.
 					</p>
 					<p>
 					You are now a badass.
@@ -285,8 +313,29 @@ function init () {
 					<div class="content_header" style="background-color: black">
 						GALLERY
 					</div>
-					<div class="content_text">
-					Här skare va bilder, serru!
+					<div class="content_text" style="margin-top:15px">
+						<a href="images/background2.png" data-lightbox="roadtrip">
+						<div class="thumbnail picone">
+						</div>
+						</a>
+						<a href="images/background3.png" data-lightbox="roadtrip">
+						<div class="thumbnail pictwo">
+						</div>
+						</a>
+						<a href="images/background4.png" data-lightbox="roadtrip">
+						<div class="thumbnail picthree">
+						</div>
+						</a>
+						<div class="thumbnail">
+						</div>
+						<div class="thumbnail">
+						</div>
+						<div class="thumbnail">
+						</div>
+						<div class="thumbnail">
+						</div>
+						<div class="thumbnail">
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -298,13 +347,13 @@ function init () {
 						CONTACT
 					</div>
 					<div class="content_text">
-						<form id="contact_form" name="contact_form" action="mailto:hakk@rooter.se?subject=Contact form" enctype="text/plain">
+						<form id="contact_form" name="contact_form" method="POST" action="sendmail.php">
 							<div style ="float:left">
 							<input type="text" name="fname" id="fname" class="input_field" placeholder="Forename" /><br /><br />
 							<input type="text" name="lname" id="fname" class="input_field" placeholder="Lastname" /><br /><br />
 							<input type="text" name="mail_address" id="mail_address" class="input_field" placeholder="Mail address" />
 							<br /><br />
-							<textarea name="msg" id="msg" rows="1" placeholder="Message"></textarea><br />
+							<textarea name="msg" id="msg" rows="1" placeholder="Message" class="msg_textarea" data-autoresize /></textarea><br />
 							<input type="submit" name="send" id="send" value="Send message" class="submit_button" style="float:right"/>
 							</div>
 						</form>
@@ -317,7 +366,7 @@ function init () {
 				<div class="footer_content_element">
 					<h3>HAKK</h3>
 					<p class="footer_text">
-					Hack n' slash platformer for up to 4 players.
+					Hack n' slash platformer for up to 10 players.
 					</p>
 					<p class="footer_text">
 						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
