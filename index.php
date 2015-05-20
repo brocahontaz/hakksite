@@ -11,22 +11,22 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script type="text/javascript">
 		//Cycling images script
-		$(window).load(function() {           
-			var i =0; 
-			var images = ['images/background2.png','images/background3.png','images/background4.png'];
-			var image = $('#main_image');
-                //Initial Background image setup
-			image.css('background-image', 'url(images/background4.png)');
-                //Change image at regular intervals
-			setInterval(function(){   
-				image.fadeOut(1000, function () {
-					image.css('background-image', 'url(' + images [i++] +')');
-					image.fadeIn(1000);
-				});
-			if(i == images.length)
-			i = 0;
-			}, 3500);            
-		});
+//		$(window).load(function() {           
+//			var i =0; 
+//			var images = ['images/background2.png','images/background3.png','images/background4.png'];
+//			var image = $('#main_image');
+//                //Initial Background image setup
+//			image.css('background-image', 'url(images/background4.png)');
+//                //Change image at regular intervals
+//			setInterval(function(){   
+//				image.fadeOut(1000, function () {
+//					image.css('background-image', 'url(' + images [i++] +')');
+//					image.fadeIn(1000);
+//				});
+//			if(i == images.length)
+//			i = 0;
+//			}, 5500);            
+//		});
 		</script>
 		<script type="text/javascript">
 		//Smooth scrolling script
@@ -52,15 +52,50 @@
 					}
 				});
 			});
-</script>
+		</script>
+		<script type="text/javascript">
+			var observe;
+if (window.attachEvent) {
+    observe = function (element, event, handler) {
+        element.attachEvent('on'+event, handler);
+    };
+}
+else {
+    observe = function (element, event, handler) {
+        element.addEventListener(event, handler, false);
+    };
+}
+function init () {
+    var text = document.getElementById('msg');
+    function resize () {
+        text.style.height = 'auto';
+        text.style.height = text.scrollHeight+'px';
+    }
+    /* 0-timeout to get the already changed text */
+    function delayedResize () {
+        window.setTimeout(resize, 0);
+    }
+    observe(text, 'change',  resize);
+    observe(text, 'cut',     delayedResize);
+    observe(text, 'paste',   delayedResize);
+    observe(text, 'drop',    delayedResize);
+    observe(text, 'keydown', delayedResize);
+
+    text.focus();
+    text.select();
+    resize();
+}
+		</script>
 	</head>
-	<body>
+	<body onload="init();">
 		<div id="top_border_container">
 		</div>
 		<div id="menu_container">
 			<div id="menu_content">
+				<a href="">
 				<div id="logo_box">
 				</div>
+				</a>
 				<a href="#home" class="menuobject">HOME</a>
 				<a href="#about" class="menuobject">ABOUT</a>
 				<a href="#team" class="menuobject">TEAM</a>
@@ -126,7 +161,7 @@
 						The website is created in HTML5-standard, designed and formatted with CSS3 and additional scripts have been created with jQuery, to allow a more smooth operation.
 						</p>
 						<p>
-						Tested in all major browsers, to ensure cross-browser stability.
+						Tested in all major browsers, to ensure cross-browser stability. Not fully tested for mobile devices as of yet.
 						</p>
 						<p>
 						Validated by <a href="https://validator.w3.org/check?uri=http%3A%2F%2Fwww.rooter.se%2Fc%2Fhakk%2F" target="_blank">W3C Markup Validation Service.</a>
@@ -250,6 +285,9 @@
 					<div class="content_header" style="background-color: black">
 						GALLERY
 					</div>
+					<div class="content_text">
+					Här skare va bilder, serru!
+					</div>
 				</div>
 			</div>
 			
@@ -258,6 +296,18 @@
 				<div class="content_container">
 					<div class="content_header" style="float: right; background-color: #106684">
 						CONTACT
+					</div>
+					<div class="content_text">
+						<form id="contact_form" name="contact_form" action="mailto:hakk@rooter.se?subject=Contact form" enctype="text/plain">
+							<div style ="float:left">
+							<input type="text" name="fname" id="fname" class="input_field" placeholder="Forename" /><br /><br />
+							<input type="text" name="lname" id="fname" class="input_field" placeholder="Lastname" /><br /><br />
+							<input type="text" name="mail_address" id="mail_address" class="input_field" placeholder="Mail address" />
+							<br /><br />
+							<textarea name="msg" id="msg" rows="1" placeholder="Message"></textarea><br />
+							<input type="submit" name="send" id="send" value="Send message" class="submit_button" style="float:right"/>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -275,9 +325,12 @@
 				</div>
 				
 				<div class="footer_content_element">
-					<h3>NEWS</h3>
+					<h3>ADDRESS</h3>
 					<p class="footer_text">
-						
+						E-huset<br />
+						LTH, Lund University<br />
+						Ole Römers Väg 3G<br />
+						223 63 Lund<br />
 					</p>
 				</div>
 				

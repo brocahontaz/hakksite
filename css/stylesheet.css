@@ -227,7 +227,7 @@ display: block;
 position: relative;
 width: 1200px;
 height: 560px;
-/*background-image: url("../images/background.png");*/
+background-image: url("../images/background2.png");
 background-size: 100%;
 background-position: left top;
 background-color: #106684;
@@ -507,4 +507,39 @@ padding: 0;
 position: relative;
 margin-top: -40px;
 clear:both;
+}
+
+/*
+
+		INPUT FIELDS
+
+*/
+
+.input_field {
+width: 328px;
+height: 30px;
+border: 1px solid #cecece; 
+padding: 5px; 
+font-size: 14px; 
+letter-spacing: 2px; 
+background-color: #FFFFFF;
+}
+
+.submit_button {
+border: 1px solid #cecece; 
+padding: 5px; 
+font-size: 16px; 
+letter-spacing: 2px; 
+background-color: #FFFFFF;
+}
+
+textarea {
+width: 700px;
+height: 1em;
+resize: none;
+overflow: hidden;
+padding: 5px; 
+font-size: 16px;
+line-height: 18px; 
+letter-spacing: 1px; 
 }
