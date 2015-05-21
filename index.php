@@ -268,14 +268,13 @@
 						To play HAKK, you first and foremost need to download the <b>Client</b>. Through the client, you can easily connect to a running server by entering the IP of chosen server.
 						</p>
 						<p>
-						If you wish to host your own session, to which up to nine of your best friends can connect, you also need the <b>Server</b>.
-						</p>
+						If you wish to host your own session, to which up to nine of your best friends can connect, you also need the <b>Server</b>. Observe that the server runs on port 13577.
 						<p>
 						No installations are required! We implement the neat concept of "plug and play" - just download, and execute! Runnable on all OS's.
 						</p>
 						<h1>Available files</h1>
 						<p>
-						<b><a href="downloads/hakkserver.jar" download>Server v. 1.0</a></b> -||- <b><a href="downloads/hakkclient.jar" download>Client v. 1.0</a></b>
+						<b><a href="downloads/hakkserver.jar" download>Server v. 1.1</a></b> -||- <b><a href="downloads/hakkclient.jar" download>Client v. 1.1</a></b>
 						</p>
 					</div>
 					
@@ -314,28 +313,38 @@
 						GALLERY
 					</div>
 					<div class="content_text" style="margin-top:15px">
-						<a href="images/background2.png" data-lightbox="roadtrip">
+						<a href="images/screen1.png" data-lightbox="roadtrip">
 						<div class="thumbnail picone">
 						</div>
 						</a>
-						<a href="images/background3.png" data-lightbox="roadtrip">
+						<a href="images/screen2.png" data-lightbox="roadtrip">
 						<div class="thumbnail pictwo">
 						</div>
 						</a>
-						<a href="images/background4.png" data-lightbox="roadtrip">
+						<a href="images/screen3.png" data-lightbox="roadtrip">
 						<div class="thumbnail picthree">
 						</div>
 						</a>
-						<div class="thumbnail">
+						<a href="images/screen4.png" data-lightbox="roadtrip">
+						<div class="thumbnail picfour">
 						</div>
-						<div class="thumbnail">
+						</a>
+						<a href="images/screen5.png" data-lightbox="roadtrip">
+						<div class="thumbnail picfive">
 						</div>
-						<div class="thumbnail">
+						</a>
+						<a href="images/screen6.png" data-lightbox="roadtrip">
+						<div class="thumbnail picsix">
 						</div>
-						<div class="thumbnail">
+						</a>
+						<a href="images/screen7.png" data-lightbox="roadtrip">
+						<div class="thumbnail picseven">
 						</div>
-						<div class="thumbnail">
+						</a>
+						<a href="images/screen8.png" data-lightbox="roadtrip">
+						<div class="thumbnail piceight">
 						</div>	
+						</a>
 					</div>
 				</div>
 			</div>
@@ -371,6 +380,9 @@
 					<p class="footer_text">
 						A project in the course Network Programming (EDA095) at Lunds Tekniska Högskola, LTH, LUND
 					</p>
+					<p class="footer_text">
+					Official server available at deeshu.se (enter as IP at startup).
+					</P>
 				</div>
 				
 				<div class="footer_content_element">

@@ -228,7 +228,7 @@ display: block;
 position: relative;
 width: 1200px;
 height: 560px;
-background-image: url("../images/background2.png");
+background-image: url("../images/screen8.png");
 background-size: 100%;
 background-position: left top;
 background-color: #106684;
@@ -562,15 +562,35 @@ background-size: 150%;
 }
 
 .thumbnail.picone {
-background-image: url("../images/background2.png");
+background-image: url("../images/screen1.png");
 }
 
 .thumbnail.pictwo {
-background-image: url("../images/background3.png");
+background-image: url("../images/screen2.png");
 }
 
 .thumbnail.picthree {
-background-image: url("../images/background4.png");
+background-image: url("../images/screen3.png");
+}
+
+.thumbnail.picfour {
+background-image: url("../images/screen4.png");
+}
+
+.thumbnail.picfive {
+	background-image: url("../images/screen5.png");
+}
+
+.thumbnail.picsix {
+background-image: url("../images/screen6.png");
+}
+
+.thumbnail.picseven {
+background-image: url("../images/screen7.png");
+}
+
+.thumbnail.piceight {
+background-image: url("../images/screen8.png");
 }
 
 /* the overlayed element */
